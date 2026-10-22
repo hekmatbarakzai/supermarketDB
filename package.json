@@ -1,0 +1,48 @@
+{
+  "name": "supermarket",
+  "version": "1.0.1",
+  "private": true,
+  "main": "main.cjs",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "start": "electron .",
+    "dist": "npm run build && node scripts/prepare-app.cjs && electron-builder --win nsis",
+    "test": "node --test tests/*.cjs"
+  },
+  "dependencies": {
+    "lucide-react": "^0.468.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "electron": "^43.0.0",
+    "electron-builder": "^26.0.12",
+    "vite": "^6.0.0"
+  },
+  "build": {
+    "appId": "com.supermarket.desktop",
+    "productName": "Supermarket",
+    "files": [
+      "dist/**/*",
+      "main.cjs",
+      "preload.cjs",
+      "database.cjs",
+      "license-public.pem"
+    ],
+    "win": {
+      "target": "nsis",
+      "artifactName": "Supermarket-Setup.exe"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    },
+    "directories": {
+      "output": "release",
+      "app": "desktop-app"
+    }
+  }
+}

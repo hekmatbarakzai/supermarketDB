@@ -1,0 +1,5 @@
+const fs=require('node:fs'),crypto=require('node:crypto'),path=require('node:path');
+const [action,arg,expiry]=process.argv.slice(2),privateFile=path.join(__dirname,'seller-private.pem'),publicFile=path.join(__dirname,'..','license-public.pem');
+if(action==='init'){if(fs.existsSync(privateFile)||fs.existsSync(publicFile))throw Error('Keys already exist. Keep the original seller key safe.');const k=crypto.generateKeyPairSync('ed25519');fs.writeFileSync(privateFile,k.privateKey.export({type:'pkcs8',format:'pem'}),{mode:0o600});fs.writeFileSync(publicFile,k.publicKey.export({type:'spki',format:'pem'}));console.log('Created seller-private.pem (NEVER distribute) and license-public.pem.');}
+else if(action==='issue'){if(!arg)throw Error('Usage: node seller/license.cjs issue INSTALLATION_ID [YYYY-MM-DD]');let expires=expiry?new Date(expiry+'T23:59:59.999Z').toISOString():null;let payload=Buffer.from(JSON.stringify({installation:arg,expires})).toString('base64url');console.log(payload+'.'+crypto.sign(null,Buffer.from(payload),fs.readFileSync(privateFile)).toString('base64url'));}
+else throw Error('Use init or issue INSTALLATION_ID [YYYY-MM-DD]');

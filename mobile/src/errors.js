@@ -1,0 +1,23 @@
+﻿export const errors={
+'Please sign in':['لطفاً وارد شوید','مهرباني وکړئ ننوځئ'],'Admin access required':['دسترسی مدیر لازم است','د مدیر لاسرسی اړین دی'],'Already configured':['قبلاً تنظیم شده است','مخکې تنظیم شوی'],'Shop, username and password (8 characters) required':['نام فروشگاه، نام کاربری و رمز حداقل ۸ حرف لازم است','د پلورنځي نوم، کارن نوم او لږ تر لږه ۸ توري پټنوم اړین دي'],'Sign-in locked for 5 minutes':['ورود برای ۵ دقیقه مسدود شد','ننوتل د ۵ دقیقو لپاره بند دي'],'Invalid credentials':['نام کاربری یا رمز نادرست است','کارن نوم یا پټنوم ناسم دی'],'Check current password; new password needs 8 characters':['رمز فعلی را بررسی کنید؛ رمز جدید حداقل ۸ حرف باشد','اوسنی پټنوم وګورئ؛ نوی پټنوم لږ تر لږه ۸ توري غواړي'],'Cart is empty':['سبد خالی است','ټوکرۍ تشه ده'],'Insufficient stock or invalid quantity':['موجودی کافی نیست یا تعداد نادرست است','ذخیره بسنه نه کوي یا شمېر ناسم دی'],'Duplicate product':['محصول تکراری است','توکی تکراري دی'],'Invalid discount':['تخفیف نادرست است','تخفیف ناسم دی'],'Invalid payment':['پرداخت نادرست است','ورکړه ناسمه ده'],'Select customer':['مشتری را انتخاب کنید','پېرودونکی وټاکئ'],'Supplier and products required':['تامین کننده و محصولات لازم است','عرضه کوونکی او توکي اړین دي'],'Invalid purchase':['خرید نادرست است','پېرودنه ناسمه ده'],'Invalid payment amount':['مبلغ پرداخت نادرست است','د ورکړې اندازه ناسمه ده'],'Invalid, expired or different installation license':['جواز نادرست، منقضی یا مربوط به نصب دیگر است','جواز ناسم، پای ته رسېدلی یا د بل نصب دی'],'Invalid collection':['مجموعه نادرست است','ټولګه ناسمه ده'],'Customer has outstanding debt':['مشتری قرض باقی‌مانده دارد','پېرودونکی پاتې پور لري'],'Unique username required':['نام کاربری یکتا لازم است','ځانګړی کارن نوم اړین دی'],'Invalid role':['نقش نادرست است','دنده ناسمه ده'],'Cannot disable your own admin':['حساب مدیر خود را غیرفعال کرده نمی‌توانید','خپل مدیر حساب نشئ بندولای'],'Password needs 8 characters':['رمز حداقل ۸ حرف باشد','پټنوم لږ تر لږه ۸ توري غواړي'],'Password required':['رمز لازم است','پټنوم اړین دی'],'Name required':['نام لازم است','نوم اړین دی'],'Invalid numeric value':['عدد نادرست است','شمېره ناسمه ده'],'Barcode must be unique uppercase Code 39 text':['بارکد باید یکتا و با حروف بزرگ کد ۳۹ باشد','بارکوډ باید ځانګړی او د کوډ ۳۹ لوی توري وي'],'Invalid amount':['مبلغ نادرست است','اندازه ناسمه ده'],'Unknown action':['عملیات ناشناخته','ناپېژندل شوې کړنه'],'Backup belongs to another installation':['نسخه پشتیبان مربوط به نصب دیگر است','شاتړ د بل نصب دی'],'Invalid backup':['نسخه پشتیبان نادرست است','شاتړ ناسم دی'],'Open the installed desktop application.':['برنامه نصب‌شده را باز کنید.','نصب شوی کاریال پرانیزئ.']};
+
+Object.assign(errors,{
+'Automatic backup folder':['???? ??????? ??????','? ?????? ???? ????'],
+'Choose where automatic backups will be saved':['??? ????? ??????????? ?????? ?? ?????? ????','? ?????? ???? ? ????? ??? ?????'],
+'Choose backup folder':['?????? ???? ???????','? ???? ???? ???? ???'],
+'Change backup folder':['????? ???? ???????','? ???? ???? ???? ???'],
+'Choose a backup folder before setup':['??? ?? ??????????? ???? ??????? ?? ?????? ????','?? ???????? ???? ? ???? ???? ???? ???'],
+'Choose a writable backup folder':['??????? ?? ????? ????? ?????? ????','? ????? ?? ???? ???? ???'],
+'Backups are saved immediately after every change.':['?????????? ???????? ?? ?? ?? ????? ????? ???????.','?? ?? ????? ?????? ?????? ???? ???? ????.'],
+'Selected backup folder is unavailable. A local backup was saved.':['???? ?????????? ?? ????? ????. ??????? ???? ????? ??.','???? ??? ???? ????. ???? ???? ????? ??.']});
+Object.assign(errors,{
+'Menu':['فهرست','غورنۍ'],
+'Automatic backups':['پشتیبان‌های خودکار','اتومات شاتړونه'],
+'Keep backups on this phone and export a copy regularly.':['پشتیبان‌ها در این تلفن ذخیره می‌شوند؛ مرتباً یک نسخه صادر کنید.','شاتړونه په دې تلیفون کې ساتل کېږي؛ په منظم ډول یوه کاپي صادره کړئ.'],
+'Enable automatic backups':['فعال کردن پشتیبان خودکار','اتومات شاتړ فعال کړئ'],
+'Automatic backup status':['وضعیت پشتیبان خودکار','د اتومات شاتړ حالت'],
+'On this phone':['در این تلفن','په دې تلیفون کې'],
+'Local backups are saved after every change. Export copies regularly.':['پس از هر تغییر پشتیبان محلی ذخیره می‌شود. مرتباً نسخه صادر کنید.','له هر بدلون وروسته ځايي شاتړ ساتل کېږي. په منظم ډول کاپي صادره کړئ.'],
+'Phone storage could not be opened':['ذخیره تلفن باز نشد','د تلیفون زېرمه پرانیستل نه شوه'],
+'Close other app tabs and try again':['صفحه‌های دیگر برنامه را ببندید و دوباره تلاش کنید','نورې د کاریال پاڼې وتړئ او بیا هڅه وکړئ'],
+'Phone storage is full or unavailable. Export a backup.':['ذخیره تلفن پُر یا در دسترس نیست. پشتیبان صادر کنید.','د تلیفون زېرمه ډکه یا نشته. شاتړ صادر کړئ.']});
