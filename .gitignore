@@ -1,0 +1,18 @@
+node_modules/
+dist/
+release/
+*.log
+seller/seller-private.pem
+desktop-app/
+
+# Keep shop data, backup preferences and seller secrets out of GitHub.
+*.sqlite
+*.sqlite-*
+*.sqlite.tmp
+backup-location.json
+backup-location.json.tmp
+*-private.pem
+.env
+.env.*
+!.env.example
+.runtime-path
